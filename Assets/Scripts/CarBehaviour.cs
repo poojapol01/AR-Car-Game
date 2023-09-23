@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarBehaviour : MonoBehaviour
 {
-    private ReticleBehaviour reticleBehaviour;
+    public ReticleBehaviour reticleBehaviour;
     private float speed = 1.2f;
 
     private void Update()
