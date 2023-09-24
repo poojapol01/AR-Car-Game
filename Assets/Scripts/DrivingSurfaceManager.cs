@@ -13,6 +13,7 @@ public class DrivingSurfaceManager : MonoBehaviour
     void Start()
     {
         arPlaneManager = gameObject.GetComponent<ARPlaneManager>();
+        arRaycastManager = gameObject.GetComponent<ARRaycastManager>();
     }
 
     // Update is called once per frame

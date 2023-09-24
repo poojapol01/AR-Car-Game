@@ -5,7 +5,7 @@ using UnityEngine;
 public class CarBehaviour : MonoBehaviour
 {
     public ReticleBehaviour reticleBehaviour;
-    private float speed = 1.2f;
+    private float speed = 1.3f;
 
     private void Update()
     {
@@ -28,6 +28,10 @@ public class CarBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        var Package = other.GetComponent<PackageBehaviour>();
+        if (Package != null)
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

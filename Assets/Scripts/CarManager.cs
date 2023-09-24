@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarManager : MonoBehaviour
 {
-    public GameObject CarPrefab;
+    public GameObject carPrefab;
     public ReticleBehaviour reticleBehaviour;
     public DrivingSurfaceManager drivingSurfaceManager;
     public CarBehaviour carBehaviour;
@@ -30,9 +30,10 @@ public class CarManager : MonoBehaviour
 
     private void Update()
     {
-        if (CarPrefab ==null && WasTapped() && reticleBehaviour.currentPlane != null)
+        if (carBehaviour == null && WasTapped() && reticleBehaviour.currentPlane != null)
         {
-            var obj = GameObject.Instantiate(CarPrefab);
+            Debug.Log("Inside CarManager Update Method");
+            var obj = GameObject.Instantiate(carPrefab);
             carBehaviour = obj.GetComponent<CarBehaviour>();
             carBehaviour.reticleBehaviour = reticleBehaviour;
             carBehaviour.transform.position = reticleBehaviour.transform.position;
