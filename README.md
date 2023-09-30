@@ -9,3 +9,8 @@ However, this won't happen in an entirely virtual world! You'll mix physical ato
 1. Detect real-world planes and draw a playing field over it.
 2. Cast rays from the camera's view and detect intersections with planes.
 3. React to real-world lighting conditions to give your game extra realism.
+
+## Screen Capture
+**AR Car Game**
+
+https://github.com/poojapol01/AR-Series/assets/69631505/86a6a812-1a74-48cd-aaa9-bfadf43e7acd
